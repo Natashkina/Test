@@ -1,0 +1,20 @@
+.about {
+  background: #ffffff;
+  -webkit-box-shadow: 0px 5px 42px 0px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0px 5px 42px 0px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 5px 42px 0px rgba(0, 0, 0, 0.15); }
+  .about-text {
+    margin: 0;
+    font-size: 14px;
+    line-height: 22px; }
+
+.representation {
+  padding-top: 50px;
+  padding-bottom: 27px;
+  color: #636363;
+  font-weight: 700; }
+
+.about-pd {
+  padding: 70px 396px 0 90px; }
+
+/*# sourceMappingURL=about.css.map */

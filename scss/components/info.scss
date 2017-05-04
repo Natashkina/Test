@@ -1,0 +1,56 @@
+.info {
+	padding-bottom: 55px;
+	display: inline-block;
+	//padding: 0 94px 0 85px;
+	padding-top: 55px;
+	padding-left: (80 / 700 *100%);
+	padding-right: (40 / 700 * 100%); 
+	vertical-align: top;
+	&-title {
+		padding-bottom: 25px;
+		color: $brand-color;
+		font-size: 18px;
+		font-weight: 700;
+	}
+	&-link {
+		display:block;
+		color: #595959;
+		line-height: 24px;
+		font-size: 14px;
+		&:hover {
+			color: $brand-color;
+		}
+	}	
+}
+.legal-info {
+	padding-top: 27px;
+		display: inline-block;
+	}
+.links  {
+	padding-top: 58px;
+	//padding-right: (125 / 682 * 100%);
+	display: inline-block;
+}
+.social {
+	width: 458px;
+	padding: 40px 100px 0;
+	float: right;
+	&-desc {
+		color: #636363;
+		font-size: 12px;
+		text-align: center;
+	}
+} 
+.copy {
+	text-align: center;
+	color:#a5a5a5;
+	padding: 37px 0 20px;
+	font-size: 12px;
+}
+.img-logo {
+	text-align: center;
+}
+.sprite {
+	padding-top: 30px;
+	padding-bottom: 20px;
+}

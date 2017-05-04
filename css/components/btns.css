@@ -1,0 +1,72 @@
+/*@mixin btn-variants($color,
+ $bg,
+ $border, 
+ $color-hover,
+ $bg-hover,
+ $border-hover: lighten($color, 10%)) {
+	color: $color;
+	background: $bg;
+	border-color: $border;
+	&:hover {
+		color: $color-hover;
+		background: $bg-hover;
+		border-color: $border-hover;
+		border-color: $btn-border-color-hover;
+	}
+}*/
+.btn {
+  font-size: 16px;
+  display: inline-block;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: pointer;
+  font-weight: 700;
+  color: #333;
+  background: #ddd;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  -webkit-box-shadow: 0px 5px 6px 1px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0px 5px 6px 1px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 5px 6px 1px rgba(0, 0, 0, 0.15); }
+  .btn:hover {
+    background: #ddd;
+    border: #ddd;
+    color: #333; }
+  .btn-lg {
+    padding: 16px 36px; }
+  .btn-inverse {
+    font-size: 16px;
+    display: inline-block;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: pointer;
+    font-weight: normal;
+    color: #333;
+    background: #ccc;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    -webkit-box-shadow: 0px 4px 6px 1px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0px 4px 6px 1px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 4px 6px 1px rgba(0, 0, 0, 0.15); }
+    .btn-inverse:hover {
+      background: #ccc;
+      border: #ddd;
+      color: #333; }
+
+.icon-zoom-in:before {
+  content: "\e987"; }
+
+.btns {
+  float: right;
+  margin-top: 15px; }
+
+.fs20 {
+  font-size: 20px; }
+
+/*# sourceMappingURL=btns.css.map */

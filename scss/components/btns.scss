@@ -1,0 +1,92 @@
+$btn-color: #333 !default;
+$btn-font-size: 16px !default;
+$btn-bg: #ddd !default;
+$btn-border: 1px solid $btn-bg !default;
+$btn-border-radius: 4px !default;
+
+$btn-padding: 10px 20px !default;
+
+$btn-bg-hover: #ddd !default;
+$btn-border-hover: $btn-bg !default;
+$btn-color-hover: #333 !default;
+$btn-inverse-bg: #ccc !default;
+$btn-inverse-bg-hover: #ccc !default;
+
+/*@mixin btn-variants($color,
+ $bg,
+ $border, 
+ $color-hover,
+ $bg-hover,
+ $border-hover: lighten($color, 10%)) {
+	color: $color;
+	background: $bg;
+	border-color: $border;
+	&:hover {
+		color: $color-hover;
+		background: $bg-hover;
+		border-color: $border-hover;
+		border-color: $btn-border-color-hover;
+	}
+}*/
+
+@mixin btn-size ($font-size, $padding, $radius) {
+	font-size: $font-size;
+	padding: $padding;
+	border-radius: $radius;
+}
+
+.btn {
+	font-size: $btn-font-size;
+	display: inline-block;
+	user-select: none;
+	cursor: pointer;
+	font-weight: 700;
+	color: $btn-color;
+	background: $btn-bg;
+	border: none;
+	border-radius: $btn-border-radius;
+	padding: $btn-padding;
+	-webkit-box-shadow: 0px 5px 6px 1px rgba(0,0,0,0.15);
+	-moz-box-shadow: 0px 5px 6px 1px rgba(0,0,0,0.15);
+	box-shadow: 0px 5px 6px 1px rgba(0,0,0,0.15);
+
+	    &:hover {
+        background: $btn-bg-hover;
+        border: $btn-border-hover;
+        color: $btn-color-hover;
+   }    
+    &-lg {
+    	padding: 16px 36px;
+    }
+    &-inverse {
+	font-size: $btn-font-size;
+	display: inline-block;
+	user-select: none;
+	cursor: pointer;
+	font-weight: normal;
+	color: $btn-color;
+	background: $btn-inverse-bg;
+	border: none;
+	border-radius: $btn-border-radius;
+	padding: $btn-padding;
+	-webkit-box-shadow: 0px 4px 6px 1px rgba(0,0,0,0.15);
+	-moz-box-shadow: 0px 4px 6px 1px rgba(0,0,0,0.15);
+	box-shadow: 0px 4px 6px 1px rgba(0,0,0,0.15);
+    
+     &:hover {
+        background: $btn-inverse-bg-hover;
+        border: $btn-border-hover;
+        color: $btn-color-hover;
+}
+}
+}
+.icon-zoom-in:before {
+  content: "\e987";
+}
+.btns {
+	float: right;
+	margin-top: 15px;
+}
+.fs20 {
+	font-size: 20px;
+}

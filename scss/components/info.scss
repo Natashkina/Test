@@ -1,56 +1,93 @@
 .info {
-	padding-bottom: 55px;
-	display: inline-block;
-	//padding: 0 94px 0 85px;
-	padding-top: 55px;
-	padding-left: (80 / 700 *100%);
-	padding-right: (40 / 700 * 100%); 
-	vertical-align: top;
-	&-title {
-		padding-bottom: 25px;
-		color: $brand-color;
-		font-size: 18px;
-		font-weight: 700;
-	}
-	&-link {
-		display:block;
-		color: #595959;
-		line-height: 24px;
-		font-size: 14px;
-		&:hover {
-			color: $brand-color;
-		}
-	}	
+    width: 36%;
+    display: inline-block;
+    padding-top: 55px;
+    padding-left: 98px;
+    padding-right: (40 / 700 * 100%);
+    vertical-align: top;
+    &-title {
+        padding-bottom: 25px;
+        color: $brand-color;
+        font-size: 18px;
+        font-weight: 700;
+    }
+    &-link {
+        display: block;
+        color: #595959;
+        line-height: 24px;
+        font-size: 14px;
+        &:hover {
+            color: $brand-color;
+        }
+    }
 }
+
 .legal-info {
-	padding-top: 27px;
-		display: inline-block;
-	}
-.links  {
-	padding-top: 58px;
-	//padding-right: (125 / 682 * 100%);
-	display: inline-block;
+    padding-top: 27px;
+    display: inline-block;
 }
+
+.links {
+    width: 20%;
+    padding-top: 58px;
+    display: inline-block;
+}
+
 .social {
-	width: 458px;
-	padding: 40px 100px 0;
-	float: right;
-	&-desc {
-		color: #636363;
-		font-size: 12px;
-		text-align: center;
-	}
-} 
-.copy {
-	text-align: center;
-	color:#a5a5a5;
-	padding: 37px 0 20px;
-	font-size: 12px;
+    width: 40%;
+    padding-top: 40px;
+    float: right;
+    &-desc {
+        padding-left: 100px;
+        padding-right: 100px;
+        color: #636363;
+        font-size: 12px;
+        text-align: center;
+    }
 }
-.img-logo {
-	text-align: center;
-}
+
 .sprite {
-	padding-top: 30px;
-	padding-bottom: 20px;
+    text-align: center;
+    padding: 26px 0 19px 0;
+    font-size: 42px;
+    color: #969696;
+}
+
+.fs {
+    display: inline-block
+}
+
+.vk {
+    display: inline-block;
+}
+
+.od {
+    display: inline-block;
+}
+
+.tw {
+    display: inline-block;
+}
+
+.gl {
+    display: inline-block;
+}
+
+.fs:hover,
+.vk:hover,
+.od:hover,
+.tw:hover,
+.gl:hover {
+    color: #9a219e;
+}
+
+.copy {
+    text-align: center;
+    color: #a5a5a5;
+    padding: 37px 0 20px;
+    font-size: 12px;
+}
+
+.img-logo {
+    text-align: center;
 }

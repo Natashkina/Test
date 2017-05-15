@@ -1,190 +1,218 @@
 .header {
-	margin: 0 auto;
-	padding-top: 14px;
-	//padding-left: (390 / 1920 * 100%);
-	//padding-right: (390 / 1920 * 100%);
-	padding-bottom: 26px;
-	&-logo {
-		display: inline-block;
-	}
-	&-logo-link{
-		display: block;
-	}
-	&-slogan {
-		display: inline-block;
-		padding-left: ( 46 / 1140 * 100% );
-		vertical-align: top;
-		padding-top: 30px;
-		color: #858585;
-		font-family: $font-family-base;
-		font-weight: 600;
-		font-size: 16px;
-		letter-spacing: 3px;
-	}
-	&-call {
-		margin-right: 24px;
-		display: inline-block;
-		font-size: 14px;
-		font-family: $font-family-base;
-		color: #3b3b3b;
-	}
+    margin: 0 auto;
+    padding-top: 14px;
+    padding-bottom: 26px;
+    &-logo {
+        display: inline-block;
+    }
+    &-logo-link {
+        display: block;
+    }
+    &-slogan {
+        display: inline-block;
+        padding-left: ( 46 / 1140 * 100%);
+        vertical-align: top;
+        padding-top: 30px;
+        color: #858585;
+        font-family: $font-family-base;
+        font-weight: 600;
+        font-size: 16px;
+        letter-spacing: 3px;
+    }
+    &-call {
+        margin-right: 24px;
+        display: inline-block;
+        font-size: 14px;
+        font-family: $font-family-base;
+        color: #3b3b3b;
+    }
+    &-toggle {
+        display: none;
+        float: right;
+        border-radius: 3px;
+        padding: 13px 8px;
+        width: 45px;
+        height: 45px;
+        border: 2px solid #000000;
+        border-radius: 50%;
+        background-color: #ffffff;
+        opacity: 0.1;
+    }
+    input[type=checkbox] {
+        display: none;
+    }
+    .popup-checkbox,
+    .popup,
+    .popup-second-checkbox2,
+    .popup-second {
+        display: none;
+    }
+    .popup {
+        position: fixed;
+        z-index: 10;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+    }
+    .popup:before {
+        display: block;
+        content: ' ';
+        position: absolute;
+        z-index: 1;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-color: #a6a6a6;
+        opacity: 0.8;
+    }
+    .popup-content {
+        width: 555px;
+        text-align: center;
+        padding: 62px 0;
+        height: 572px;
+        box-shadow: 0 5px 8px 1px rgba(0, 0, 0, 0.1), 0 16px 42px rgba(0, 0, 0, 0.14);
+        background: linear-gradient(to top, #f5f5f5 0%, #ffffff 100%);
+        position: absolute;
+        z-index: 2;
+        top: 17vh;
+        left: 0;
+        right: 0;
+        margin: auto;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+    .popup-closer {
+        position: absolute;
+        top: 32px;
+        right: 32px;
+        color: #a6a6a6;
+        font-size: 26px;
+        display: block;
+        width: 16px;
+        height: 16px;
+        line-height: 20px;
+        text-align: center;
+        cursor: pointer;
+    }
+    .popup-checkbox:checked + .popup {
+        opacity: 1;
+        display: block;
+    }
+    .popup-second {
+        position: fixed;
+        z-index: 20;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+    }
+    .popup-second:before {
+        display: block;
+        content: ' ';
+        position: absolute;
+        z-index: 1;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        opacity: 0.8;
+    }
+    .popup-second-content {
+        position: relative;
+        top: 164px;
+        z-index: 6;
+        margin: auto;
+        text-align: center;
+        padding: 36px 105px;
+        width: 555px;
+        height: 280px;
+        box-shadow: 0 5px 8px 1px rgba(0, 0, 0, 0.1), 0 16px 42px rgba(0, 0, 0, 0.14);
+        background-image: linear-gradient(to top, #f5f5f5 0%, #ffffff 100%);
+    }
+    .popup-second-checkbox2:checked + .popup-second {
+        opacity: 1;
+        display: block;
+    }
+    .popup {
+        &-title {
+            color: $brand-color;
+            font-size: 24px;
+            font-weight: 700;
+        }
+        &-desc {
+            padding: 20px 0 37px 0;
+            color: #212121;
+            font-size: 14px;
+            font-weight: 400;
+        }
+        &-name {
+            width: 360px;
+            margin-bottom: 15px;
+        }
+        &-phone {
+            width: 360px;
+            margin-bottom: 15px;
+        }
+        &-textarea {
+            margin-bottom: 34px;
+            width: 360px;
+            height: 128px;
+        }
+    }
+    .viber {
+        color: #694a84;
+        font-size: 10px;
+        display: block;
+        text-align: right;
+        text-transform: uppercase;
+    }
+}
 
-.popup-checkbox, .popup, .popup-second-checkbox2, .popup-second {
-  display: none;
-}
-.popup {
-  position: fixed;
-  z-index: 10;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  opacity: 0;
-}
-
-.popup:before {
-  display: block;
-  content: ' ';
-  position: absolute;
-  z-index: 1;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  background-color: #a6a6a6;
-  opacity: 0.8;
-}
-.popup-content {
-	width: 555px;
-	text-align: center;
-	padding: 62px 0 ;
-	height: 572px;
-	box-shadow: 0 5px 8px 1px rgba(0, 0, 0, 0.1), 0 16px 42px rgba(0, 0, 0, 0.14);
-	background: linear-gradient(to top, #f5f5f5 0%, #ffffff 100%);
-  position: absolute;
-  z-index: 2;
-  top: 164px;
-  left: 0;
-  right: 0;
-  margin: auto;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
-.popup-closer {
-  position: absolute;
-  top: 32px;
-  right: 32px;
-  color: #a6a6a6;
-  font-size: 26px;
-  display: block;
-  width: 16px;
-  height: 16px;
-  line-height: 20px;
-  text-align: center;
-  cursor: pointer;
-}
-.popup-checkbox:checked + .popup {
-  opacity: 1;
-  display: block;
-}
-.popup-second {
-  position: fixed;
-  z-index: 20;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  opacity: 0;
-}
-.popup-second:before {
-  display: block;
-  content: ' ';
-  position: absolute;
-  z-index: 1;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  background-color: #a6a6a6;
-  opacity: 0.8;
-}
-.popup-second-content {
-	position: relative;
-	top: 164px;
-	z-index: 6;
-	margin: auto;
-		text-align: center;
-		padding: 36px 105px;
-		width: 555px;
-height: 280px;
-box-shadow: 0 5px 8px 1px rgba(0, 0, 0, 0.1), 0 16px 42px rgba(0, 0, 0, 0.14);
-background-image: linear-gradient(to top, #f5f5f5 0%, #ffffff 100%);
-	}
-.popup-second-checkbox2:checked + .popup-second {
-  opacity: 1;
-  display: block;
-}
-
-.popup {
-	
-	&-title {
-		color: $brand-color;
-		font-size: 24px;
-		font-weight: 700;
-		}
-	&-desc {
-		padding: 20px 0 37px 0;
-		color: #212121;
-		font-size: 14px;
-		font-weight: 400;
-	}
-	&-name {
-		width: 360px;	
-		margin-bottom: 15px;
-	}
-	&-phone {
-		width: 360px;
-		margin-bottom: 15px;
-	}
-	&-textarea {
-		margin-bottom: 34px;
-		width: 360px;
-		height: 128px;
-	}
-	}
-	
-	.viber {
-		color: #694a84;
-		font-size: 10px;
-		display: block;
-		text-align: right;
-		text-transform: uppercase;
-	}
-}
 .pagenav--fixed {
-  position: fixed;
-  width: 100%;
-  top: 0;
-/*   боремся с миганием у фиксированных элементов */
-  transform: translateZ(0); 
-}
-.navbar__inner {
-background-color: rgba(30, 24, 53, 0.4);
-z-index: 1;
-}
-.pagenav {
-	margin: 0;
-	padding: 0;
-	min-height: 70px;
-}
-.pagenav-item {
-		padding: 23px 25px;
-		display: inline-block;
-	}
-.pagenav-link {
-		font-size: 18px;
-		font-family: $font-family-base;
-		font-weight: 600;
-		color: #ffffff;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    transform: translateZ(0);
 }
 
+.navbar__inner {
+    text-align: center;
+    background-color: rgba(30, 24, 53, 0.4);
+    z-index: 1;
+}
+
+.pagenav {
+    margin: 0;
+    padding: 0;
+    min-height: 70px;
+}
+
+.pagenav-item {
+    padding-top: 23px;
+    padding-bottom: 23px;
+    padding-right: (25 /1140 * 100%);
+    display: inline-block;
+}
+
+.pagenav-link {
+    font-size: 18px;
+    font-family: $font-family-base;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+.pagenav-link:hover {
+    color: #9a9a9a;
+}
+
+.icon-bar {
+    height: 3px;
+    margin-bottom: 4px;
+    display: block;
+    width: 100%;
+    background-color: #999999;
+}

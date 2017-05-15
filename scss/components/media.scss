@@ -1,0 +1,429 @@
+@media all and (max-width: 768px) {
+    .pagenav-item {
+        padding-bottom: 19px;
+        text-align: center;
+        display: block;
+    }
+    .header-toggle {
+        z-index: 20;
+        position: absolute;
+        top: 34px;
+        right: 20px;
+        display: block;
+    }
+    input[type=checkbox]:checked ~ .to-be-changed {
+        display: block;
+    }
+    input[type=checkbox] {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+    .pagenav {
+        position: absolute;
+        top: 113px;
+        left: 0;
+        right: 0;
+        display: none;
+    }
+    .pagenav:after {
+        width: 100%;
+        content: "";
+        display: inline-block;
+    }
+    .header-call {
+        display: none;
+    }
+    .btns {
+        margin-right: 80px;
+    }
+    .header .popup-content {
+        width: 455px;
+        padding: 24px 0;
+        height: 433px;
+    }
+    .header .popup-desc {
+        padding: 2px 0 17px 0;
+    }
+    .header .popup-name,
+    .header .popup-phone {
+        margin-bottom: 10px
+    }
+    .header .popup-textarea {
+        margin-bottom: 16px;
+        height: 100px;
+    }
+    .header .popup-second-content {
+        width: 455px;
+        padding: 36px 97px;
+        height: 250px;
+    }
+    .more {
+        padding-left: 0;
+        padding-top: 24px
+    }
+    .service-expandable-text {
+        margin-top: 15px;
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .diagram-img {
+        display: none;
+    }
+    .diagram-content {
+        width: 100%;
+        padding: 50px 60px;
+    }
+    .reviews-content {
+        width: 100%;
+        padding: 50px 60px;
+    }
+    .reviews-dark {
+        display: none;
+    }
+}
+
+@media all and (max-width: 480px) {
+    body {
+        font-size: 14px;
+    }
+    .block-title {
+        font-size: 40px;
+    }
+    .header-slogan {
+        display: none;
+    }
+    .owl-carousel .owl-prev,
+    .owl-carousel .owl-next {
+        display: none;
+    }
+    .brand-title {
+        padding-top: 100px;
+        padding-left: 0;
+        padding-right: 0;
+        line-height: 45px;
+        font-size: 37px;
+    }
+    .brand-desc {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .woman-img {
+        display: none;
+    }
+    .about-pd {
+        padding: 20px 20px 0 20px;
+    }
+    .about {
+        background: none;
+        box-shadow: none;
+    }
+    .fs20 {
+        margin-left: 26%;
+    }
+    .more {
+        text-align: center;
+        display: block;
+    }
+    .block-desc {
+        display: none;
+    }
+    .about-items {
+        display: none;
+    }
+    .service-expandable-text {
+        display: none;
+    }
+    .tabs {
+        min-height: 140px;
+    }
+    .tab {
+        width: 49%;
+        border: 2px solid #ff5b00;
+        border-radius: 25px;
+    }
+    .tab > span {
+        cursor: pointer;
+        padding: 5px;
+        font-weight: 700;
+        color: #a6a6a6;
+        margin: 0;
+        padding-bottom: 0;
+    }
+    .tab > span.selected {
+        margin: 0;
+        padding-bottom: 0;
+        border-bottom: none;
+    }
+    .info,
+    .links {
+        display: none;
+    }
+    .social {
+        background: #ffffff;
+        width: 100%;
+    }
+    .line-item {
+        margin: 0;
+    }
+    .line-desc {
+        display: none;
+    }
+    .reviews-holder {
+        box-shadow: none;
+    }
+    .reviews-content {
+        padding: 37px 21px 0;
+    }
+    .diagram-content {
+        padding: 37px 21px 0;
+    }
+    .diagram-holder {
+        box-shadow: none;
+    }
+    .nambers {
+        display: none;
+    }
+    .step {
+        display: block;
+        text-align: center;
+    }
+    #owl-carousel2 .owl-prev {
+        top: 240px !important;
+        left: 45% !important;
+    }
+    #owl-carousel2 .owl-next {
+        top: 240px !important;
+        left: 55% !important;
+    }
+    .name {
+        width: 100%;
+    }
+    .phone {
+        width: 100%;
+    }
+    .form-control {
+        padding: 0 45px;
+    }
+    select[name="originLang"] {
+        width: 360px;
+    }
+    select[name="translateName"] {
+        width: 360px;
+    }
+    .service-item {
+        text-align: left;
+        width: 100%;
+        padding-bottom: 20px;
+    }
+    .service-img {
+        display: inline-block;
+        text-align: center;
+    }
+    .service-desc {
+        display: inline-block;
+    }
+    .pagenav-item {
+        padding: 15px 0;
+    }
+    .woman {
+        display: none;
+    }
+    .phones,
+    .mail {
+        text-align: left;
+        display: block;
+        width: 100%;
+    }
+    .forms-desc {
+        display: inline-block;
+    }
+    .skype {
+        width: 100%;
+        text-align: left;
+        display: inline-block;
+    }
+    .inline {
+        display: inline-block;
+    }
+    .pl12 {
+        padding-left: 12px;
+    }
+    .afterline:before {
+        padding: 0 15px;
+        content: "|";
+        clear: both;
+    }
+    #owl-carousel3 .owl-prev {
+        left: 20px !important;
+    }
+    #owl-carousel3 .owl-next {
+        left: 50px !important;
+    }
+    .reviews {
+        height: 365px;
+    }
+}
+
+@media all and (max-width: 320px) {
+    .btn-inverse {
+        display: none;
+    }
+    .btn-inverse-xs {
+        display: inline-block;
+        background: $btn-inverse-bg;
+        padding: 8px 19px;
+        color: #ffffff;
+        border: none;
+        font-size: 14px;
+        font-weight: 600;
+        border-radius: $btn-border-radius;
+        -webkit-box-shadow: 0px 4px 6px 1px rgba(0, 0, 0, 0.15);
+        -moz-box-shadow: 0px 4px 6px 1px rgba(0, 0, 0, 0.15);
+        box-shadow: 0px 4px 6px 1px rgba(0, 0, 0, 0.15);
+    }
+    .header-toggle {
+        width: 36px;
+        height: 36px;
+        padding: 11px 6px;
+    }
+    .icon-bar {
+        height: 2px;
+        margin-bottom: 3px;
+    }
+    .header-logo {
+        width: 88px;
+    }
+    .btns {
+        margin-right: 59px;
+    }
+    .header-toggle {
+        top: 27px !important;
+    }
+    .pagenav {
+        top: 89px;
+    }
+    .header .popup-name,
+    .header .popup-phone,
+    .header .popup-textarea {
+        width: 230px;
+        padding: 10px;
+    }
+    .header .popup-content {
+        width: 280px;
+        height: 373px;
+    }
+    .header .popup-title {
+        font-size: 18px;
+    }
+    .header .popup-desc {
+        font-size: 10px;
+    }
+    .header .popup-closer {
+        top: 10px !important;
+        right: 10px !important;
+    }
+    .header .popup-second-content {
+        height: 200px;
+        width: 280px;
+        padding: 36px 27px;
+    }
+    .btn-xs {
+        padding: 10px;
+        font-size: 14px;
+    }
+    .about-pd {
+        padding: 0px 20px 0 20px;
+    }
+    .brand-title {
+        line-height: 37px;
+        font-size: 23px;
+    }
+    .block-title {
+        font-size: 24px;
+        padding: 20px 0 30px;
+    }
+    .fs20 {
+        margin-left: 14%;
+    }
+    .fs20 {
+        font-size: 17px;
+    }
+    .more {
+        font-size: 17px;
+        padding-bottom: 60px;
+    }
+    .tabs {
+        min-height: 90px;
+    }
+    .tab > span,
+    .tab > span.selected {
+        font-size: 12px;
+        line-height: 14px;
+    }
+    .service-desc {
+        padding: 0;
+        font-size: 14px;
+    }
+    .p4 {
+        display: inline-block;
+        width: 79%;
+        vertical-align: text-bottom;
+        padding: 0;
+    }
+    .service-img {
+        width: 50px;
+        height: 50px;
+        font-size: 25px;
+    }
+    .fa {
+        vertical-align: initial;
+    }
+    .form-group {
+        display: none;
+    }
+    .social-desc {
+        padding: 0;
+    }
+    .diagram-line {
+        display: none;
+    }
+    .diagram-text {
+        font-size: 13px;
+        padding-top: 15px;
+    }
+    #owl-carousel2 .owl-prev {
+        left: 42% !important;
+    }
+    #owl-carousel2 .owl-next {
+        left: 52% !important;
+    }
+    .reviews-text {
+        padding-top: 5px;
+        font-size: 12px;
+    }
+    .reviews {
+        height: 410px;
+    }
+    #owl-carousel3 .owl-next,
+    #owl-carousel3 .owl-prev {
+        top: 369px !important;
+    }
+    .forms-title {
+        font-size: 17px;
+    }
+    .forms-desc {
+        font-size: 13px;
+    }
+    .step {
+        font-size: 20px;
+    }
+    .diagram-holder {
+        margin-right: -14px;
+        margin-left: -14px;
+    }
+    .reviews-holder {
+        margin-right: -14px;
+        margin-left: -14px;
+    }
+}

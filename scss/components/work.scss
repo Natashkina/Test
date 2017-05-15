@@ -1,3 +1,191 @@
 .work {
-	text-align: center;
+    text-align: center;
+}
+
+.diagram-holder {
+    height: 306px;
+    box-shadow: 0 5px 8px 1px rgba(0, 0, 0, 0.1), 0 16px 42px rgba(0, 0, 0, 0.14);
+    background-color: #ffffff;
+    margin-bottom: 55px;
+}
+
+.reviews-holder {
+    background-color: #ffffff;
+    box-shadow: 0 5px 8px 1px rgba(0, 0, 0, 0.1), 0 16px 42px rgba(0, 0, 0, 0.14);
+    margin-bottom: 130px;
+    line-height: 22px;
+    position: relative;
+    content: "";
+    clear: both;
+}
+
+.reviews {
+    text-align: left;
+    height: 404px;
+    &-name {
+        font-family: 'MyriadPro-Bold';
+        font-weight: 700;
+        color: #636363;
+        font-size: 18px;
+        display: inline-block;
+    }
+    &-company {
+        color: #a6a6a6;
+        font-family: "Myriad Pro";
+        font-size: 16px;
+        font-weight: 400;
+        display: inline-block;
+    }
+    &-stars {
+        padding-top: 5px;
+    }
+    &-dark {
+        width: 23%;
+        height: 100%;
+        float: right;
+        position: relative;
+        content: "";
+        clear: both;
+    }
+    &-text {
+        padding-top: 15px;
+        font-size: 14px;
+        display: inline-block;
+    }
+    &-content {
+        width: 66%;
+        padding: 63px 0 0 97px;
+        display: inline-block;
+    }
+    &-img {
+        position: absolute;
+        bottom: 0;
+        left: -30px;
+    }
+    .next {
+        color: $brand-color;
+        font-size: 14px;
+        font-weight: 700;
+    }
+}
+
+.nambers {
+    float: right;
+    color: #c7c7c7;
+    display: inline-block;
+    font-family: "Myriad Pro";
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.namber-active {
+    color: #636363;
+}
+
+.line-item {
+    text-align: center;
+    list-style: none;
+    margin: 15px 0 0 0;
+    padding: 0;
+    text-align: justify;
+    padding-left: (96 / 1140 *100%);
+    padding-right: (96 / 1140 *100%);
+}
+
+.line-item:after {
+    width: 100%;
+    content: "";
+    display: inline-block;
+}
+
+.line-items {
+    text-align: center;
+    display: inline-block;
+}
+
+.circle {
+    margin: 0 auto;
+    width: 48px;
+    height: 48px;
+    background-color: #c2c2c2;
+    border-radius: 50%;
+}
+
+.circle-shadow {
+    width: 60px;
+    height: 60px;
+    padding-top: 6px;
+    background-color: #e6e6e6;
+    border-radius: 50%;
+    margin: auto;
+}
+.line-items:before { 
+content:"";
+clear: both;
+height: 12px;
+width: 15px;
+background: #ff6200;
+}
+.circle-shadow:active {
+    width: 60px;
+    height: 60px;
+    box-shadow: 0 5px 6px 1px rgba(168, 71, 0, 0.15);
+    background-image: linear-gradient(270deg, #ff6000 0%, #ff7e00 100%);
+}
+
+.circle:active {
+    background-image: linear-gradient(270deg, #ff6000 0%, #ff7e00 100%);
+}
+
+.circle-namber {
+    color: #ffffff;
+    font-family: "Open Sans";
+    font-size: 24px;
+    font-weight: 700;
+    padding-top: 6px;
+}
+
+/*:before {
+    width: 100%;
+    content: "";
+    display: inline-block;
+    height: 1px;
+    background-color: #f5ceff;
+}
+*/
+.line-desc {
+    padding-top: 25px;
+    color: #010101;
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 90px;
+}
+
+.diagram {
+    height: 306px;
+    text-align: left;
+    &-text {
+        font-size: 14px;
+        padding-top: 28px;
+    }
+    &-content {
+        padding: 64px 63px 0 98px;
+        width: 63%;
+        float: left;
+        display: inline-block;
+    }
+    &-img {
+        width: 37%;
+        height: auto;
+        float: right;
+        display: inline-block;
+    }
+}
+
+.step {
+    display: inline-block;
+    color: #636363;
+    font-size: 22px;
+    font-weight: 700;
 }

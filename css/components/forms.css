@@ -8,7 +8,7 @@
     margin-bottom: 83px;
     margin-top: 60px; }
   .form-control {
-    padding: 0 102px; }
+    padding: 0 97px; }
     .form-control::-webkit-input-placeholder {
       color: #fff;
       opacity: 1; }
@@ -40,6 +40,7 @@
 .forms {
   color: #ffffff; }
   .forms-title {
+    font-size: 20px;
     padding-bottom: 20px;
     padding-top: 44px; }
 
@@ -54,7 +55,7 @@
 
 .mail {
   display: inline-block;
-  width: 33%;
+  width: 32%;
   vertical-align: top;
   text-align: center; }
 
@@ -64,7 +65,10 @@
   vertical-align: top;
   text-align: center; }
 
-input, .input, textarea, .textarea {
+input,
+.input,
+textarea,
+.textarea {
   padding: 18px;
   margin: auto;
   width: 100%;
@@ -83,7 +87,8 @@ input, .input, textarea, .textarea {
 .line {
   height: 2px;
   background-color: #e8e8e8;
-  margin: auto; }
+  margin: auto;
+  margin-bottom: 20px; }
 
 .name {
   width: 48%;
@@ -91,7 +96,7 @@ input, .input, textarea, .textarea {
   float: left; }
 
 .long {
-  width: 100%; }
+  width: 100% !important; }
 
 .phone {
   width: 48%;
@@ -99,25 +104,36 @@ input, .input, textarea, .textarea {
   display: inline-block; }
 
 .submit {
-  margin-bottom: 48px;
+  margin-bottom: 65px;
   width: 163px; }
 
-.file {
+.filestyle {
+  height: 52px;
+  margin-bottom: 25px;
+  background: url(../images/file.png) no-repeat;
+  background-position: 50% 50%;
+  background-color: #f1f1f1;
   border: 2px dashed #e1e1e1; }
 
-input-placeholder {
-  font-size: 14px;
-  font-weight: 400; }
+.file {
+  opacity: 0;
+  margin-bottom: 0 !important; }
 
-/*&::-moz-placeholder          { font-size: $form-font-size; font-weight: 400; font-family: $font-family-base;}
-	&::-moz-placeholder           { font-size: $form-font-size; font-weight: 400; font-family: $font-family-base;}
-	&::-ms-input-placeholder      { font-size: $form-font-size; font-weight: 400; font-family: $font-family-base;}
+select[name="translateName"] {
+  width: 49.5%;
+  height: 50px;
+  background: transparent;
+  margin-bottom: 20px; }
 
-	/*&:focus::-webkit-input-placeholder {color: transparent;}
-	&:focus::-moz-placeholder          {color: transparent;}
-	&:focus:-moz-placeholder           {color: transparent;}
-	&:focus:-ms-input-placeholder      {color: transparent;}
+select[name="originLang"] {
+  width: 49.5%;
+  height: 50px;
+  background: transparent;
+  margin-bottom: 20px; }
 
-}*/
+select[name="theme"] {
+  width: 100%;
+  background: transparent;
+  height: 50px; }
 
 /*# sourceMappingURL=forms.css.map */

@@ -1,18 +1,4 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,700");
-@font-face {
-  font-family: "MyriadProRegular";
-  src: url("../fonts/MyriadProRegular/MyriadProRegular.eot");
-  src: url("../fonts/MyriadProRegular/MyriadProRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/MyriadProRegular/MyriadProRegular.woff") format("woff"), url("../fonts/MyriadProRegular/MyriadProRegular.ttf") format("truetype");
-  font-style: normal;
-  font-weight: normal; }
-
-@font-face {
-  font-family: "MyriadProBold";
-  src: url("../fonts/MyriadProBold/MyriadProBold.eot");
-  src: url("../fonts/MyriadProBold/MyriadProBold.eot?#iefix") format("embedded-opentype"), url("../fonts/MyriadProBold/MyriadProBold.woff") format("woff"), url("../fonts/MyriadProBold/MyriadProBold.ttf") format("truetype");
-  font-style: normal;
-  font-weight: normal; }
-
 body {
   color: #000;
   background-color: #fff;
@@ -28,36 +14,51 @@ a {
   color: blue;
   text-decoration: none; }
   a:hover {
-    color: lighten blue, 10%;
     text-decoration: none; }
 
-h1, h2, h3, h4, h5, h6,
-.h1, .h2, .h3, .h4, .h5, .h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
   font-family: inherit;
   color: inherit;
   font-weight: 700; }
 
-h1, .h1 {
+h1,
+.h1 {
   font-size: 36px;
   margin: 1em; }
 
-h2, .h2 {
+h2,
+.h2 {
   font-size: 30px;
   margin: 1em; }
 
-h3, .h3 {
+h3,
+.h3 {
   font-size: 24px;
   margin: 1em; }
 
-h4, .h4 {
+h4,
+.h4 {
   font-size: 18px;
   margin: 1em; }
 
-h5, .h5 {
+h5,
+.h5 {
   font-size: 14px;
   margin: 1em; }
 
-h6, .h6 {
+h6,
+.h6 {
   font-size: 12px;
   margin: 1em; }
 
